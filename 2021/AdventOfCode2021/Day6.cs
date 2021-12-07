@@ -18,8 +18,29 @@ namespace AdventOfCode2022
         [Test]
         public void Part1()
         {
+            for (int iteration = 0; iteration < 80; iteration++)
+            {
+                List<int> newDay = new List<int>();
+                for (int i = 0; i < input.Count(); i++)
+                {
+                    if (inputs[i] == 0)
+                    {
+                        inputs[i] = 7;
+                        newDay.Add(8);
+                    }
 
-            Assert.That(-1, Is.EqualTo(0));
+                    inputs[i]--;
+                }
+
+                List<int> t = new List<int>();
+                t.AddRange(inputs);
+                t.AddRange(newDay);
+
+                inputs = t.ToArray();
+            }
+
+            
+            Assert.That(inputs.Length, Is.EqualTo(3769));
         }
 
         [Test]
