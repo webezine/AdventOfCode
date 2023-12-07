@@ -20,6 +20,10 @@
     <PackageReference Include="NLog.Web.AspNetCore" Version="4.12.0" />
     <PackageReference Include="System.Configuration.ConfigurationManager" Version="5.0.0" />
   </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AdventOfCode\AdventOfCode.csproj" />
+  </ItemGroup>
 	<ItemGroup>
     <None Update="Day01\Day01-Part1.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

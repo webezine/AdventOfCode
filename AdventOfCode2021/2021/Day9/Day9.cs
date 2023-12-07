@@ -1,14 +1,13 @@
-﻿using System;
+﻿using AdventOfCode;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Text;
-using System.Text.RegularExpressions;
 using AOCConsole = System.Console;
 
 namespace AdventOfCode2021.Day
 {
-    public class Day9 : DayBase
+    public class Day9 
     {
         readonly string[] _input;
         private static int BasinSize = 0;
@@ -23,7 +22,7 @@ namespace AdventOfCode2021.Day
 
             _input = File.ReadAllLines(path);
 
-            WriteDayOnePart(part, day);
+            DayOutput.WriteDayPart(part, day);
 
             if (part == 1)
             {

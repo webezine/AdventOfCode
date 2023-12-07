@@ -1,11 +1,12 @@
-﻿using System;
+﻿using AdventOfCode;
+using System;
 using System.IO;
 using System.Linq;
 using AOCConsole = System.Console;
 
 namespace AdventOfCode2022.Day
 {
-    public class Day03 : DayBase
+    public class Day03 
     {
         private readonly string _inventory;
 
@@ -16,7 +17,7 @@ namespace AdventOfCode2022.Day
 
             _inventory = File.ReadAllText(path);
 
-            WriteDayPart(part, day);
+            DayOutput.WriteDayPart(part, day);
 
             if (part == 1)
             {

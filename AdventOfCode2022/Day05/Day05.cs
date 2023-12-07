@@ -6,7 +6,7 @@ using AOCConsole = System.Console;
 
 namespace AdventOfCode2022.Day
 {
-    public class Day05 : DayBase
+    public class Day05 
     {
         private readonly string _stacks;
         public static List<Stack<char>> stacks = new();

@@ -1,15 +1,16 @@
-﻿using System.Collections.Generic;
+﻿using AdventOfCode;
+using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using AOCConsole = System.Console;
 
 namespace AdventOfCode2021.Day
 {
-    public class Day2 : DayBase
+    public class Day2
     {
         readonly List<(string Name, int Value)> commands;
 
-        public Day2(int part, int day)
+        public Day2(int part, string day)
         {
             var path = Path.Combine(Directory.GetCurrentDirectory(), $"Day{day}", $"Day{day}.txt");
 
@@ -18,7 +19,7 @@ namespace AdventOfCode2021.Day
                            .Select(x => (x[0], int.Parse(x[1])))
                            .ToList();
 
-            WriteDayOnePart(part, day);
+            DayOutput.WriteDayPart(part, day);
 
             if (part == 1)
             {

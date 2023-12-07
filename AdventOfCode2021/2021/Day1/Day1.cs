@@ -1,11 +1,12 @@
-﻿using System.Collections.Generic;
+﻿using AdventOfCode;
+using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using AOCConsole = System.Console;
 
 namespace AdventOfCode2021.Day
 {
-    public class Day1: DayBase
+    public class Day1
     {
         private readonly List<int> _depths;
 
@@ -15,7 +16,7 @@ namespace AdventOfCode2021.Day
 
             _depths = File.ReadAllLines(path).Select(x => int.Parse(x)).ToList();
             
-            WriteDayOnePart(part, day);
+            DayOutput.WriteDayPart(part, day);
 
             if (part == 1)
             {

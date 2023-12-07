@@ -1,4 +1,4 @@
-﻿using System;
+﻿using AdventOfCode;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -6,14 +6,14 @@ using AOCConsole = System.Console;
 
 namespace AdventOfCode2021.Day {
 
-    public class Day4 : DayBase
+    public class Day4
     {
         readonly List<string> input;
         readonly List<int> numbers;
         readonly List<List<List<int>>> boards = new();
         readonly int n;
 
-        public Day4(int part, int day)
+        public Day4(int part, string day)
         {
             var path = Path.Combine(Directory.GetCurrentDirectory(), $"Day{day}", $"Day{day}.txt");
             input = File.ReadAllLines(path).ToList();
@@ -32,7 +32,7 @@ namespace AdventOfCode2021.Day {
 
                 boards.Add(board);
             }
-            WriteDayOnePart(part, day);
+            DayOutput.WriteDayPart(part, day);
 
             if (part == 1)
             {

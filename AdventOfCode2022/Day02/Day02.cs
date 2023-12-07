@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AdventOfCode;
+using System;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
@@ -6,7 +7,7 @@ using AOCConsole = System.Console;
 
 namespace AdventOfCode2022.Day
 {
-    public class Day02 : DayBase
+    public class Day02 
     {
         private readonly string _moves;
         private enum Shape
@@ -30,7 +31,7 @@ namespace AdventOfCode2022.Day
 
             _moves = File.ReadAllText(path);
 
-            WriteDayPart(part, day);
+            DayOutput.WriteDayPart(part, day);
 
             if (part == 1)
             {

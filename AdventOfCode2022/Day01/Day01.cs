@@ -1,11 +1,12 @@
-﻿using System.Collections.Generic;
+﻿using AdventOfCode;
+using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using AOCConsole = System.Console;
 
 namespace AdventOfCode2022.Day
 {
-    public class Day01: DayBase
+    public class Day01
     {
         private readonly string[] _calories;
 
@@ -15,7 +16,7 @@ namespace AdventOfCode2022.Day
 
             _calories = File.ReadAllLines(path);
 
-            WriteDayPart(part, day);
+            DayOutput.WriteDayPart(part, day);
 
             if (part == 1)
             {

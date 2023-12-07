@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AdventOfCode;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -8,7 +9,7 @@ using AOCConsole = System.Console;
 
 namespace AdventOfCode2021.Day
 {
-    public class Day8 : DayBase
+    public class Day8
     {
         readonly string[] _input;
         private static string wordRegex = @"(\w+)";
@@ -19,7 +20,7 @@ namespace AdventOfCode2021.Day
 
             _input = File.ReadAllLines(path);
 
-            WriteDayOnePart(part, day);
+            DayOutput.WriteDayPart(part, day);
 
             if (part == 1)
             {

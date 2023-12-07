@@ -7,7 +7,7 @@ using AOCConsole = System.Console;
 
 namespace AdventOfCode2022.Day
 {
-    public class Day12 : DayBase
+    public class Day12 
     {
         private readonly string _heightMap;
 

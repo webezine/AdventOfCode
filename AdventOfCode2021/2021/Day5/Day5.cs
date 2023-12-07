@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AdventOfCode;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -6,7 +7,7 @@ using AOCConsole = System.Console;
 
 namespace AdventOfCode2021.Day
 {
-    public class Day5 : DayBase
+    public class Day5
     {
         readonly List<(int x1, int y1, int x2, int y2)> _lines;
 
@@ -20,7 +21,7 @@ namespace AdventOfCode2021.Day
                                          int.Parse(line.Split(" -> ")[1].Split(",")[1])))
                         .ToList();
 
-            WriteDayOnePart(part, day);
+            DayOutput.WriteDayPart(part, day);
 
             if (part == 1)
             {

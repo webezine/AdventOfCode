@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AdventOfCode;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -6,19 +7,19 @@ using AOCConsole = System.Console;
 
 namespace AdventOfCode2021.Day
 {
-    public class Day3 : DayBase
+    public class Day3 
     {
         readonly List<string> binaryNumbers;
         readonly int numberOfBits;
 
-        public Day3(int part, int day)
+        public Day3(int part, string day)
         {
             var path = Path.Combine(Directory.GetCurrentDirectory(), $"Day{day}", $"Day{day}.txt");
 
             binaryNumbers = File.ReadAllLines(path).ToList();
             numberOfBits = binaryNumbers[0].Length;
 
-            WriteDayOnePart(part, day);
+            DayOutput.WriteDayPart(part, day);
 
             if (part == 1)
             {

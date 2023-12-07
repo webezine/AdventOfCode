@@ -8,7 +8,7 @@ using AOCConsole = System.Console;
 
 namespace AdventOfCode2022.Day
 {
-    public class Day13 : DayBase
+    public class Day13 
     {
         private readonly string _packets;
 

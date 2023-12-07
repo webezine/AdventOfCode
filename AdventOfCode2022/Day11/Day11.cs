@@ -8,7 +8,7 @@ using AOCConsole = System.Console;
 
 namespace AdventOfCode2022.Day
 {
-    public class Day11 : DayBase
+    public class Day11 
     {
         private readonly string _monkeyBusiness;
         delegate bool TryParse(string pattern, out string arg);
