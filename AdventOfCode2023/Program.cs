@@ -17,17 +17,19 @@ class Program
         var part = AOCConsole.ReadLine();
         AOCConsole.WriteLine($"Part {part} coming right up...");
         AOCConsole.WriteLine();
-        if (day.Length == 1)
-        {
-            day = string.Concat("0", day);
-        }
-
+    
         switch (day)
         {
             case "01":
+            case "1":
                 new Day01(int.Parse(part));
                 break;
-            
+
+            case "02":
+            case "2":
+                new Day02(int.Parse(part));
+                break;
+
         }
     }
 
