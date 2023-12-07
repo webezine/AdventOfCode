@@ -19,7 +19,7 @@ public partial class Day01
 
     public Day01(int part)
     {
-        var path = Path.Combine(Directory.GetCurrentDirectory(), $"Day01", $"Day01.txt");
+        var path = Path.Combine(Directory.GetCurrentDirectory(), $"Day01", $"Day01-input.txt");
         _input = File.ReadAllLines(path);
 
         DayOutput.WriteDayPart(part, "01");
