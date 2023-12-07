@@ -10,11 +10,6 @@ namespace AdventOfCode2021.Day
     public class Day9 
     {
         readonly string[] _input;
-        private static int BasinSize = 0;
-        private static HashSet<string> visited = new();
-        private static int _rowLength = 0;
-        private static int _columnLength = 0;
-
 
         public Day9(int part, string day)
         {
