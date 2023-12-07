@@ -3,6 +3,7 @@ using System.IO;
 using System.Linq;
 using System;
 using AOCConsole = System.Console;
+using AdventOfCode;
 
 namespace AdventOfCode2022.Day
 {
@@ -17,7 +18,7 @@ namespace AdventOfCode2022.Day
 
             _stacks = File.ReadAllText(path);
 
-            WriteDayPart(part, day);
+            DayOutput.WriteDayPart(part, day);
 
             if (part == 1)
             {

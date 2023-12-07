@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AdventOfCode;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -16,7 +17,7 @@ namespace AdventOfCode2022.Day
 
             _treeHeights = File.ReadLines(path).ToList();
 
-            WriteDayPart(part, day);
+            DayOutput.WriteDayPart(part, day);
 
             if (part == 1)
             {

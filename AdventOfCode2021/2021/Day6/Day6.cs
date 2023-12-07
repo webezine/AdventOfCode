@@ -12,7 +12,7 @@ namespace AdventOfCode2021.Day
         readonly string[] _input;
         private int[] _inputs;
 
-        public Day6(int part, int day)
+        public Day6(int part, string day)
         {
             var path = Path.Combine(Directory.GetCurrentDirectory(), $"Day{day}", $"Day{day}.txt");
 

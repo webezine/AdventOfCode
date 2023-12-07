@@ -10,7 +10,7 @@ namespace AdventOfCode2021.Day
     {
         private readonly List<int> _depths;
 
-        public Day1(int part, int day)
+        public Day1(int part, string day)
         {
             var path = Path.Combine(Directory.GetCurrentDirectory(), $"Day{day}", $"Day{day}.txt");
 

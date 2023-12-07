@@ -14,7 +14,7 @@ namespace AdventOfCode2021.Day
         readonly string[] _input;
         private static string wordRegex = @"(\w+)";
 
-        public Day8(int part, int day)
+        public Day8(int part, string day)
         {
             var path = Path.Combine(Directory.GetCurrentDirectory(), $"Day{day}", $"Day{day}.txt");
 

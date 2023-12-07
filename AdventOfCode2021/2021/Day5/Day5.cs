@@ -11,7 +11,7 @@ namespace AdventOfCode2021.Day
     {
         readonly List<(int x1, int y1, int x2, int y2)> _lines;
 
-        public Day5(int part, int day)
+        public Day5(int part, string day)
         {
             var path = Path.Combine(Directory.GetCurrentDirectory(), $"Day{day}", $"Day{day}.txt");
             _lines = File.ReadAllLines(path)

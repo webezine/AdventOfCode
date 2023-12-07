@@ -1,4 +1,5 @@
-﻿using AdventOfCode2022.Day11;
+﻿using AdventOfCode;
+using AdventOfCode2022.Day11;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -19,7 +20,7 @@ namespace AdventOfCode2022.Day
 
             _monkeyBusiness = File.ReadAllText(path);
 
-            WriteDayPart(part, day);
+            DayOutput.WriteDayPart(part, day);
 
             if (part == 1)
             {

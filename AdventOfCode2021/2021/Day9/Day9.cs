@@ -16,7 +16,7 @@ namespace AdventOfCode2021.Day
         private static int _columnLength = 0;
 
 
-        public Day9(int part, int day)
+        public Day9(int part, string day)
         {
             var path = Path.Combine(Directory.GetCurrentDirectory(), $"Day{day}", $"Day{day}.txt");
 

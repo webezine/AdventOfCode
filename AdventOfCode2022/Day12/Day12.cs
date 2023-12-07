@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AdventOfCode;
+using System;
 using System.Collections.Generic;
 using System.Collections.Immutable;
 using System.IO;
@@ -27,7 +28,7 @@ namespace AdventOfCode2022.Day
 
             _heightMap = File.ReadAllText(path);
 
-            WriteDayPart(part, day);
+            DayOutput.WriteDayPart(part, day);
 
             if (part == 1)
             {
