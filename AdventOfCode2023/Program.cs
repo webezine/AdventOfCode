@@ -30,6 +30,11 @@ class Program
                 new Day02(int.Parse(part));
                 break;
 
+            case "03":
+            case "3":
+                new Day03(int.Parse(part));
+                break;
+
         }
     }
 
